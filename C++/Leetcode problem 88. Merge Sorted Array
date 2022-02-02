@@ -1,3 +1,6 @@
+// Main probelm is we cant even add a single additional index in the nums1 array, we've to do the task in the given space only
+
+
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
