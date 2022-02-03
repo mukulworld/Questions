@@ -1,3 +1,8 @@
+// This was the first problem that made me realize how poerful Unordered_map can be 
+// Did this question first by O(n^4) time complexity then unordered_map decreased it 
+// to O(n^2)
+
+
 class Solution {
 public:
     int fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {
