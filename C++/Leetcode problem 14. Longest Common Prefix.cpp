@@ -4,7 +4,10 @@ public:
       int n = strs.size();
        if(n==0) return "";
          string prefx;
-            sort(strs.begin(),strs.end());  
+        // sorting the vector and then comparing letters of the first and last
+        // string of vector to see how many startinf leters are common in them
+        
+            sort(strs.begin(),strs.end());   
             string start=strs[0];
             string end=strs[n-1];
             
