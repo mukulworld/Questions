@@ -22,3 +22,26 @@ public:
         return v;
     }
 };
+
+
+// Unsorted array 
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int>answer;
+        unordered_map<int,int>mapp;
+        int compliment;
+        for(int i=0;i<nums.size();i++)
+        {
+          compliment = target - nums[i];
+              if(mapp.find(compliment) != mapp.end()) {
+                answer.push_back(mapp[target-nums[i]]);
+                answer.push_back(i);
+                  return answer;
+            }
+           mapp[nums[i]]=i;
+        }
+        return answer;
+    }
+};
